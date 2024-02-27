@@ -1,0 +1,30 @@
+.containerSkills {
+    color: var(--cor-laranja);
+    text-align: center;
+}
+
+.tituloSkills {
+    margin: 60px;
+    margin-top: -4px;
+}
+
+.containerIcone {
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin: 100px;
+}
+
+@media (min-width: 370px) and (max-width: 460px)  {
+      
+    .containerIcone {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .tituloSkills {
+        margin-top: 40px;
+        font-size: 15px;
+    }
+
+}

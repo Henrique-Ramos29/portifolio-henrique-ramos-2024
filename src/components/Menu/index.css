@@ -1,0 +1,27 @@
+.containerMenu {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+    color: var(--cor-laranja);
+
+}
+
+.containerLista {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.link:hover {
+    color: var(--cor-branco)
+}
+
+@media (min-width: 370px) and (max-width: 460px)  {
+    .tituloMenu {
+        font-size: 15px;
+    }
+
+    .containerLista {
+        font-size: 10px;
+    }
+}

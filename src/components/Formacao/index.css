@@ -1,0 +1,44 @@
+.containerFormacao {
+    color: var(--cor-laranja);
+}
+
+.tituloFormacao {
+    text-align: center;
+    
+}
+.containerConteudo {
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+}
+
+.subtituloFormacao {
+    text-align: center;
+}
+
+.imagemFormacao {
+    width: 250px;
+    border-radius: 6px;
+}
+
+@media (min-width: 370px) and (max-width: 460px) {
+
+    .containerConteudo {
+        gap: 10px;       
+    }
+
+    .tituloFormacao {
+        font-size: 15px;
+        margin-bottom: 33px;
+    }
+
+    .imagemFormacao {
+        width: 175px;
+        margin-bottom: 12px;
+        margin-top: 15px;
+    }
+
+
+
+
+}
