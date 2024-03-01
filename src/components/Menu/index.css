@@ -17,11 +17,17 @@
 }
 
 @media (min-width: 370px) and (max-width: 460px)  {
+    .containerMenu {
+        justify-content: space-between;
+        margin-top: 17px;
+    }
+
     .tituloMenu {
-        font-size: 15px;
+        font-size: 20px;
+
     }
 
     .containerLista {
-        font-size: 10px;
+        font-size: 12px;
     }
 }

@@ -1,7 +1,10 @@
 .containerProjetos {
     color: var(--cor-laranja);
+    margin: 40px;
+    
 }
 
 .tituloProjetos {
     text-align: center;
+    margin-top: 30px;
 }

@@ -16,6 +16,11 @@
     text-align: center;
 }
 
+.subtituloFormacao2 {
+    text-align: center;
+    color: var(--cor-branco);
+}
+
 .imagemFormacao {
     width: 250px;
     border-radius: 6px;
@@ -29,13 +34,13 @@
 
     .tituloFormacao {
         font-size: 15px;
-        margin-bottom: 33px;
+        margin-bottom: 10px;
     }
 
     .imagemFormacao {
         width: 175px;
         margin-bottom: 12px;
-        margin-top: 15px;
+        margin-top: 40px;
     }
 
 

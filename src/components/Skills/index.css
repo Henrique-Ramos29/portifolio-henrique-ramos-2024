@@ -17,14 +17,19 @@
 
 @media (min-width: 370px) and (max-width: 460px)  {
       
+    .containerSkills {
+        margin-top: 120px;
+    }
+    
     .containerIcone {
         display: flex;
         flex-wrap: wrap;
+        margin: 21%;
     }
 
     .tituloSkills {
-        margin-top: 40px;
         font-size: 15px;
+        margin-top: 16px;
     }
 
 }
