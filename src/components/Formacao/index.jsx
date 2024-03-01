@@ -8,7 +8,7 @@ const Formacao = () => {
     return(
         <motion.div id='formacao' className='containerFormacao'>
             <h2 className='tituloFormacao'>Formação Academica</h2>
-              <motion.div className='containerConteudo' >
+              <motion.div className='containerConteudoFormacao' >
                  <div className='subtituloImagem'>
                     <img className='imagemFormacao' src={aluraOracle} alt='Alura' />
                     <h4 className='subtituloFormacao' >Oracle + Alura</h4>

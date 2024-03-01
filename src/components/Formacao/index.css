@@ -6,7 +6,7 @@
     text-align: center;
     
 }
-.containerConteudo {
+.containerConteudoFormacao {
     display: flex;
     justify-content: space-around;
     padding: 100px;
@@ -28,9 +28,15 @@
 
 @media (min-width: 370px) and (max-width: 460px) {
 
-    .containerConteudo {
+    .containerFormacao {
         gap: 10px;       
     }
+
+    .containerConteudoFormacao {
+        flex-wrap: wrap;
+        padding: 16px;
+    }
+
 
     .tituloFormacao {
         font-size: 15px;
