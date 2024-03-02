@@ -32,8 +32,12 @@
 .containerRedeSociais {
     display: flex;
     margin-top: 30px;
-    gap: 20px;
+    gap: 40px;
     justify-content: center;
+}
+
+.icone:hover {
+   color: var(--cor-branco)
 }
 
 @media (min-width: 370px) and (max-width: 460px)  {
@@ -59,8 +63,9 @@
     }
 
     .textoSobre {
-        text-align: center;
-        margin-right: 0;
+        text-align: justify;
+        margin: 10px;
+        
     }
 
 }

@@ -25,7 +25,7 @@ const EfeitoText = () => {
   return (
     <div>
       <h1>OI, MEU NOME É HENRIQUE RAMOS</h1>
-      <AutoTyping text="Sou Desenvolvendor Front-end Jr" speed={130} />
+      <AutoTyping text="Sou Desenvolvendor Front-end Jr" speed={150}/>
     </div>
   );
 };
