@@ -9,7 +9,7 @@ const Menu = () => {
                   <a className='link' href='#sobre'>Sobre</a>
                   <a className='link' href='#skills'>Soft Skills</a>
                   <a className='link' href='#formacao'>Formação</a>
-                  <a className='link' href='#'>Projetos</a>
+                  <a className='link' href='#projetos'>Projetos</a>
                </motion.ul>
            </motion.div>
     )

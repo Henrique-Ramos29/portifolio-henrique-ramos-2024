@@ -1,0 +1,9 @@
+.botaoPrincipal {
+    border-radius: 6px;
+    width: 89px;
+    height: 32px;
+    color: var(--cor-laranja);
+    background: transparent;
+    border: solid 3px;
+    opacity: 10px;
+}

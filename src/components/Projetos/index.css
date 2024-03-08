@@ -1,10 +1,42 @@
-.containerProjetos {
+.Projetos {
     color: var(--cor-laranja);
     margin: 40px;
+    
+}
+
+.containerProjetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
     
 }
 
 .tituloProjetos {
     text-align: center;
     margin-top: 30px;
+    margin-bottom: inherit;
+
+}
+
+.imagemProjetos {
+    width: 340px;
+    border-radius: 6px;
+}
+
+.subtituloProjetos {
+    text-align: center;
+}
+
+.containerButtonProjetos {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+@media (min-width: 370px) and (max-width: 460px) {
+    .imagemProjetos {
+        width: 277px;
+    }
 }
