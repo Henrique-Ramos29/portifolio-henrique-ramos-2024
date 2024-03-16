@@ -27,12 +27,12 @@ const Projetos = () => {
                 </motion.div>
                 <motion.div>
                     <img className='imagemProjetos' src={geek} />
-                    <p className='subtituloProjetos'>HenriqueGeek na web CRUD com JavaScript</p>
+                    <p className='subtituloProjetos'>Web CRUD com JavaScript</p>
                     <div className='containerButtonProjetos'>
-                        <a target='_black' href='https://manupule-dom-com-javascript.vercel.app/'>
+                        <a className='linkButton' target='_black' href='https://manupule-dom-com-javascript.vercel.app/'>
                             Demo
                         </a>
-                        <a target='_black' href='https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git'>
+                        <a className='linkButton' target='_black' href='https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git'>
                             Repositorio
                         </a>
                     </div>
@@ -42,22 +42,22 @@ const Projetos = () => {
                     <img className='imagemProjetos' src={alurinha} />
                     <p className='subtituloProjetos'>Web site usado flexbox</p>
                     <div className='containerButtonProjetos'>
-                        <a target='_black' href='https://manupule-dom-com-javascript.vercel.app/'>
+                        <a className='linkButton' target='_black' href='https://manupule-dom-com-javascript.vercel.app/'>
                             Demo
                         </a>
-                        <a target='_black' href='https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git'>
+                        <a className='linkButton' target='_black' href='https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git'>
                             Repositorio
                         </a>
                     </div>
                 </motion.div>
                 <motion.div>
                     <img className='imagemProjetos' src={pet} />
-                    <p className='subtituloProjetos'>CRUD e validação do formulario Javascript</p>
+                    <p className='subtituloProjetos'>CRUD e validação do formulario</p>
                     <div className='containerButtonProjetos'>
-                        <a target='_black' href='https://manupule-dom-com-javascript.vercel.app/'>
+                        <a className='linkButton' target='_black' href='https://manupule-dom-com-javascript.vercel.app/'>
                             Demo
                         </a>
-                        <a target='_black' href='https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git'>
+                        <a className='linkButton' target='_black' href='https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git'>
                             Repositorio
                         </a>
                     </div>
@@ -66,10 +66,10 @@ const Projetos = () => {
                     <img className='imagemProjetos' src={criptografa} />
                     <p className='subtituloProjetos'>Oracle ONE challenge criptografia</p>
                     <div className='containerButtonProjetos'>
-                        <a target='_black' href='https://manupule-dom-com-javascript.vercel.app/'>
+                        <a className='linkButton' target='_black' href='https://manupule-dom-com-javascript.vercel.app/'>
                             Demo
                         </a>
-                        <a target='_black' href='https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git'>
+                        <a className='linkButton' target='_black' href='https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git'>
                             Repositorio
                         </a>
                     </div>
@@ -78,10 +78,10 @@ const Projetos = () => {
                     <img className='imagemProjetos' src={barbearia} />
                     <p className='subtituloProjetos'>Componetes React.js</p>
                     <div className='containerButtonProjetos'>
-                        <a target='_black' href='https://manupule-dom-com-javascript.vercel.app/'>
+                        <a className='linkButton' target='_black' href='https://manupule-dom-com-javascript.vercel.app/'>
                             Demo
                         </a>
-                        <a target='_black' href='https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git'>
+                        <a className='linkButton' target='_black' href='https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git'>
                             Repositorio
                         </a>
                     </div>

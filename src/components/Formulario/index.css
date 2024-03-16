@@ -16,7 +16,6 @@
     margin-bottom: 10px;
 }
 
-.containerFormulario, 
 
 .containerFormulario, label { 
        margin-bottom: 10px;
@@ -25,4 +24,10 @@
 .containerFormulario, button {
     margin-top: 10px;
     border-radius: 6px;
+}
+
+@media (min-width: 370px) and (max-width: 460px)  {
+    .input {
+        width: 200px;
+    }
 }
