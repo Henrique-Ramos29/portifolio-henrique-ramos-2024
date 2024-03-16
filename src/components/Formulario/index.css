@@ -1,0 +1,28 @@
+.containerFormulario { 
+    display: flex;
+    flex-direction: column;
+    grid: 10px;
+    align-items: center;
+}
+
+.input {
+    border-radius: 6px;
+    margin-bottom: 10px;
+    border: solid var(--cor-laranja);
+    width: 500px;
+}
+
+.containerFormulario, h2, h4 {
+    margin-bottom: 10px;
+}
+
+.containerFormulario, 
+
+.containerFormulario, label { 
+       margin-bottom: 10px;
+}
+
+.containerFormulario, button {
+    margin-top: 10px;
+    border-radius: 6px;
+}

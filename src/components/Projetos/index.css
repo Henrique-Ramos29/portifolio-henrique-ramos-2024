@@ -1,7 +1,7 @@
 .Projetos {
     color: var(--cor-laranja);
     margin: 40px;
-    
+
 }
 
 .containerProjetos {
@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    
+
 }
 
 .tituloProjetos {
