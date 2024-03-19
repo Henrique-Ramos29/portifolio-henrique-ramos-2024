@@ -8,7 +8,7 @@
 
 .containerLista {
     display: flex;
-    gap: 1rem;
+    gap: 12px;
     align-items: center;
 }
 
@@ -22,10 +22,6 @@
         margin-top: 17px;
     }
 
-    .tituloMenu {
-        font-size: 20px;
-
-    }
 
     .containerLista {
         font-size: 12px;
