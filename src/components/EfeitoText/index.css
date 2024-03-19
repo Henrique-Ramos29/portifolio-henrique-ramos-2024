@@ -1,10 +1,16 @@
 .textoDigitando {
-    font-size: 25px;
+    font-size: 30px;
+    color: white;
 }
+
+.underline {
+    color: white;
+}
+
 
 @media (min-width: 370px) and (max-width: 460px) {
     .textoDigitando {
-        font-size: 17px;
+        font-size: 20px;
     }
 }
 

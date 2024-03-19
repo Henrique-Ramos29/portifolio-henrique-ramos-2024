@@ -7,7 +7,7 @@ const Banner = () => {
 
      return (
           <motion.div className='containerBanner'>
-               <div id='#id' className='tituloBanner'>
+               <div className='tituloBanner'>
                     <EfeitoText />
                </div>
                <motion.div>
