@@ -6,7 +6,7 @@ const Formulario = () => {
     return (
         <motion.div>
             <form className='containerFormulario'>
-                <h2>Contato</h2>
+                <h3>Contato</h3>
                 <h4>Preencha o formulário ao lado e entrarei em contato o mais rápido possível.</h4>
                 <label>Nome</label> 
                 <input className="input" type='text' placeholder='Deixe seu nome' required minLength={3}/>

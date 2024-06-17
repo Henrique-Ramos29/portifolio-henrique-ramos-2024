@@ -1,6 +1,7 @@
 .containerSkills {
     color: var(--cor-laranja);
     text-align: center;
+    margin: 25px;
 }
 
 .tituloSkills {
