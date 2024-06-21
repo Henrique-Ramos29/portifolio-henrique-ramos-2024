@@ -29,7 +29,7 @@ const Menu = () => {
 
               <li className='link'>
                   <Link to='/' onClick={() => toggleMenu('/')}>
-                  Home
+                  Inicio
                   </Link>
                 </li>
 
