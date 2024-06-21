@@ -49,9 +49,10 @@
     }
     
     .tituloSobre {
-        font-size: 15px;
+        font-size: 27px;
         margin: 0px;
         margin-bottom: 47px;
+        margin-top: 24px;
     }
 
     .fotoSobre {

@@ -46,4 +46,8 @@
     .imagemProjetos {
         width: 277px;
     }
+
+    .tituloProjetos {
+        font-size: 27px;
+    }
 }
