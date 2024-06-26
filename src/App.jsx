@@ -9,6 +9,8 @@ import Skills from './components/Skills';
 import Sobre from './components/Sobre';
 import PaginaPadrao from './components/PaginaPadrao';
 import ScrollToTop from './components/ScrollToTop';
+import Contato from './components/Contato';
+
 
 
 const App = () => {
@@ -22,7 +24,8 @@ const App = () => {
             <Route path='/sobreMim' element={<Sobre />} />
             <Route path='/softSkills' element={<Skills/>} />
             <Route path='/formacao' element={<Formacao />} />
-            <Route path='projetos' element={<Projetos />} />
+            <Route path='/projetos' element={<Projetos />} />
+            <Route path='/contato' element={<Contato />} />
       </Routes>
         <Rodape />
     </BrowserRouter>

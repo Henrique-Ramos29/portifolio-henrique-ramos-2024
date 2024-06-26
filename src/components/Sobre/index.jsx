@@ -19,22 +19,6 @@ const Sobre = () => {
                React e MySQL, além de desenvolver meus próprios projetos e enfrentar desafios. Em 2024, 
                comecei a faculdade na Estácio e estou muito feliz. Só tenho a agradecer à minha família, 
                que sempre me apoiou nessa trajetória!
-               <div className='containerRedeSociais'>
-                  <a href='https://www.linkedin.com/in/henrique-ramos2023' target='_black' className='icone'>
-                   <ImLinkedin size={25} /> 
-                  </a>
-                  <a href='https://github.com/Henrique-Ramos29' target='_black' className='icone'>
-                   <ImGithub  size={25} />
-                  </a>
-                  <a href='https://api.whatsapp.com/send?phone=5547999247819&text=Ol%C3%A1,%20gostaria%20de%20falar%20com%20Henrique%20Ramos%20?'
-                   target='_black' className='icone'>
-                   <ImWhatsapp  size={25} />
-                  </a>
-                  <a href='https://www.instagram.com/henrique_ramos27?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==' 
-                   target='_black' className='icone'>
-                   <ImInstagram  size={25} />
-                  </a>
-               </div>
             </p>
          </motion.div>
       </motion.div>

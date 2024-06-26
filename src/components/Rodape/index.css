@@ -1,5 +1,11 @@
 .containerFooter {
     color: var(--cor-laranja);
     text-align: center;
-    margin: 128px;
+    margin: 100px;
+}
+
+@media (min-width: 370px) and (max-width: 460px) {
+    .containerFooter {
+        margin: 10px;
+    }
 }

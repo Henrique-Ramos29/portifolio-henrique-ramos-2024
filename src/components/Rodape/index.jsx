@@ -1,12 +1,10 @@
 import { motion } from 'framer-motion';
 import './index.css';
-import Formulario from '../Formulario';
 import { ImLinkedin, ImGithub, ImWhatsapp, ImInstagram } from "react-icons/im";
 
 const Rodape = () => {
    return (
       <motion.footer className='containerFooter'>
-         <Formulario />
          <h4>Henrique Ramos</h4>
          <div className='containerRedeSociais'>
                   <a href='https://www.linkedin.com/in/henrique-ramos2023' target='_black' className='icone'>

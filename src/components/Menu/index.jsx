@@ -56,6 +56,11 @@ const Menu = () => {
                   </Link>
                   </li>
 
+                  <li className='link'>
+                  <Link to='/contato' onClick={() => toggleMenu('/contato')}>
+                  Contato
+                  </Link>
+                </li>
               </ul>
             </nav>
           )}

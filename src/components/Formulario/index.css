@@ -3,31 +3,49 @@
     flex-direction: column;
     grid: 10px;
     align-items: center;
+    color: var(--cor-laranja);
+}
+
+.tituloContato {
+    font-size: 27px;
+    margin-bottom: 10px;
+}
+
+.subtituloContato {
+    font-size: 15px;
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.buttonContato { 
+    width: 82px;
+    height: 29px;
+    border-color: var(--cor-laranja);
 }
 
 .input {
-    border-radius: 6px;
+    border-radius: 3px;
     margin-bottom: 10px;
     border: solid var(--cor-laranja);
     width: 500px;
 }
 
-.containerFormulario, h3, h4 {
-    margin-bottom: 10px;
-}
-
-
-.containerFormulario, label { 
+.nomeInput { 
        margin-bottom: 10px;
 }
 
-.containerFormulario, button {
+.buttonContato {
     margin-top: 10px;
     border-radius: 6px;
 }
 
 @media (min-width: 370px) and (max-width: 460px)  {
     .input {
-        width: 200px;
+        width: 393px;
+    }
+
+    .containerFormulario {
+        margin-top: 60px;
+        gap: 5px;
     }
 }

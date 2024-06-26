@@ -6,14 +6,14 @@
 
 .tituloSkills {
     font-size: 26px;
-    margin-top: -80px;
+    margin-top: 0 auto;
 }
 
 .containerIcone {
     display: flex;
     justify-content: center;
     gap: 5em;
-    margin: 100px;
+    margin: 30px;
 }
 
 @media (min-width: 370px) and (max-width: 460px) {
