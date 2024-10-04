@@ -42,7 +42,7 @@ const Projetos = () => {
                     <img className='imagemProjetos' src={alurinha} />
                     <p className='subtituloProjetos'>Web site usado flexbox</p>
                     <div className='containerButtonProjetos'>
-                        <a className='linkButton' target='_black' href='web-alurinha.vercel.app'>
+                        <a className='linkButton' target='_black' href=''>
                             Demo
                         </a>
                         <a className='linkButton' target='_black' href='https://github.com/Henrique-Ramos29/Web-Alurinha.git'>
@@ -54,7 +54,7 @@ const Projetos = () => {
                     <img className='imagemProjetos' src={organo} />
                     <p className='subtituloProjetos'>Organo React.js</p>
                     <div className='containerButtonProjetos'>
-                        <a className='linkButton' target='_black' href='organo-alura-oracle.vercel.app'>
+                        <a className='linkButton' target='_black' href='https://organo-alura-oracle.vercel.app/'>
                             Demo
                         </a>
                         <a className='linkButton' target='_black' href='https://github.com/Henrique-Ramos29/Organo__Alura_Oracle.git'>

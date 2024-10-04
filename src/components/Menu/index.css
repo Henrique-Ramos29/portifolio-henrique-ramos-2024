@@ -11,6 +11,16 @@
 
 }
 
+.floating-menu.light {
+    background-color: var(--preto); /* Cor de fundo para tema claro */
+    color: var(--cor-laranja);
+  }
+  
+.floating-menu.dark {
+    background-color: var(--azul-fundo); /* Cor de fundo para tema escuro */
+    color: var(--cor-laranja);
+  }
+
 .content {
     display: flex;
     flex-direction: column;
@@ -36,6 +46,9 @@
 }
 
 
+.buttonThemeLink {
+    
+}
 
 .link:hover {
     color: var(--cor-branco)

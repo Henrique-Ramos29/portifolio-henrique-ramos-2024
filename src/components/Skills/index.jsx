@@ -14,8 +14,6 @@ const Skills = () => {
                 <DiVisualstudio title='VS code' size={200} />
                 <DiMysql title='MySql' size={200} />
                 <DiGit title='Git' size={200} />
-
-
               </motion.div>
         </motion.div>
     )

@@ -1,0 +1,10 @@
+
+.buttonTheme:hover {
+  cursor: pointer;
+  color: white;
+}
+
+.nomeTheme {
+    font-size: 12px;
+    margin-top: 10px;
+}

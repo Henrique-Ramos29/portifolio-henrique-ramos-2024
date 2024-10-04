@@ -1,4 +1,21 @@
 #root {
     margin: 0 auto;
     padding: 1rem;
+  
   }
+
+  /* App.css */
+[data-theme='light'] {
+  --background-color: var(--preto);
+  --text-color: black;
+}
+
+[data-theme='dark'] {
+  --background-color: var(--azul-fundo);
+  --text-color: white;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}

@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import './App.css'
-import Banner from './components/Banner';
 import Formacao from './components/Formacao';
 import Menu from './components/Menu'
 import Projetos from './components/Projetos';
@@ -10,12 +9,15 @@ import Sobre from './components/Sobre';
 import PaginaPadrao from './components/PaginaPadrao';
 import ScrollToTop from './components/ScrollToTop';
 import Contato from './components/Contato';
+import ThemeProvider from './components/Tema/ThemeContext';
 
 
 
 const App = () => {
   
   return (
+  <ThemeProvider>
+
     <BrowserRouter>
      <ScrollToTop />
       <Menu />
@@ -29,6 +31,8 @@ const App = () => {
       </Routes>
         <Rodape />
     </BrowserRouter>
+
+  </ThemeProvider>
   )
 }
 

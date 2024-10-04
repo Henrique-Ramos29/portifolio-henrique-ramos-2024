@@ -12,7 +12,7 @@ const Sobre = () => {
             <p className='textoSobre'>
 
                Eu me chamo Henrique Ramos e estou em busca da transição de carreira. Atualmente, 
-               sou empreendedor, tenho um serviço de delivery e comecei a estudar programação em outubro de 2022,
+               sou motorista comecei a estudar programação em outubro de 2022,
                fazendo um curso de lógica de programação com a tecnologia JavaScript. Em novembro do mesmo ano, 
                fui agraciado com o Oracle One Next Education e tive o privilégio de estudar na Alura, 
                onde concluí a formação Front-end. Tenho me dedicado bastante a estudar HTML5, CSS3, JavaScript, 
