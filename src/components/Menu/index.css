@@ -24,8 +24,8 @@
 .content {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
-    padding: 3rem;
+    gap: 1.5rem;
+    padding: 5rem;
 }
 
 .containerLista {
@@ -45,10 +45,6 @@
     z-index: 1000;
 }
 
-
-.buttonThemeLink {
-    
-}
 
 .link:hover {
     color: var(--cor-branco)

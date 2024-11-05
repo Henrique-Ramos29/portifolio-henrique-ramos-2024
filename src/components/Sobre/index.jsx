@@ -11,14 +11,13 @@ const Sobre = () => {
             <motion.img className='fotoSobre' src={FotoSobreMim} alt='foto henrique ramos' />
             <p className='textoSobre'>
 
-               Eu me chamo Henrique Ramos e estou em busca da transição de carreira. Atualmente, 
-               sou motorista comecei a estudar programação em outubro de 2022,
-               fazendo um curso de lógica de programação com a tecnologia JavaScript. Em novembro do mesmo ano, 
-               fui agraciado com o Oracle One Next Education e tive o privilégio de estudar na Alura, 
-               onde concluí a formação Front-end. Tenho me dedicado bastante a estudar HTML5, CSS3, JavaScript, 
-               React e MySQL, além de desenvolver meus próprios projetos e enfrentar desafios. Em 2024, 
-               comecei a faculdade na Estácio e estou muito feliz. Só tenho a agradecer à minha família, 
-               que sempre me apoiou nessa trajetória!
+               "Olá, eu sou Henrique Ramos! Atualmente estou em transição de carreira, e minha jornada na programação começou em 2022.
+               Comecei estudando lógica de programação em JavaScript, e logo depois fui selecionado para o programa Oracle One Next Education.
+               Lá, tive o privilégio de me especializar em Front-end na Alura.
+
+               Hoje, estou focado no desenvolvimento com HTML5, CSS3, JavaScript e React, sempre criando projetos próprios e enfrentando
+               novos desafios. Estou dedicado a expandir minhas habilidades e contribuir com projetos que fazem a diferença. Sinto que essa
+               é a nova etapa da minha vida profissional, e estou empolgado para compartilhar essa caminhada com vocês!"
             </p>
          </motion.div>
       </motion.div>

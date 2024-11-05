@@ -7,13 +7,13 @@ const Skills = () => {
         <motion.div id='skills' className='containerSkills'>
             <motion.h2 className='tituloSkills'>Soft Skills</motion.h2>
               <motion.div className='containerIcone'>
-                <DiHtml5  title='Html 5' size={200} />
-                <DiCss3Full title='Css 3' size={200} />
-                <DiJavascript1 title='JavaScript' size={200} />
-                <DiReact title='React' size={200} />
-                <DiVisualstudio title='VS code' size={200} />
-                <DiMysql title='MySql' size={200} />
-                <DiGit title='Git' size={200} />
+                <DiHtml5  title='Html 5' size={180} />
+                <DiCss3Full title='Css 3' size={180} />
+                <DiJavascript1 title='JavaScript' size={180} />
+                <DiReact title='React' size={180} />
+                <DiVisualstudio title='VS code' size={180} />
+                <DiMysql title='MySql' size={180} />
+                <DiGit title='Git' size={180} />
               </motion.div>
         </motion.div>
     )
