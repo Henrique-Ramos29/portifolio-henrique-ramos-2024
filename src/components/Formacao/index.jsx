@@ -17,12 +17,12 @@ const Formacao = () => {
                  <div className='subtituloImagem' >
                     <img className='imagemFormacao' src={estacio} alt='estacio' />
                     <h4 className='subtituloFormacao' >Estácio</h4>
-                    <p className='subtituloFormacao2' >2024 - em andamento</p>
+                    <p className='subtituloFormacao2' >2024 - trancado 2025</p>
                  </div>
                  <div className='subtituloImagem'>
                     <img className='imagemFormacao'src={bootcamp} alt='bootcamp programação do zero' />
                     <h4 className='subtituloFormacao'>BootCamp</h4>
-                    <p className='subtituloFormacao2'>2024</p>
+                    <p className='subtituloFormacao2'>2024 - 2024 </p>
                  </div>
               </motion.div>
         </motion.div>

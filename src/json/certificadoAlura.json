@@ -1,0 +1,478 @@
+{
+    "informacoesAlura": {
+      "endereco": "Rua Vergueiro, 3185, 8º andar, São Paulo, SP",
+      "telefone": "(11) 4118-2432",
+      "empresa": "AOVS Sistemas de Informática S.A",
+      "cnpj": "05.555.382/0001.33",
+      "site": "www.alura.com.br"
+    },
+    "certificado": {
+      "nomeCompleto": "Jose Henrique Serrão Ramos",
+      "periodo": {
+        "inicio": "28/11/2022",
+        "fim": "26/05/2025"
+      },
+      "formacoes": [
+        {
+          "nome": "Iniciante em Programação T4 - ONE",
+          "cargaHorariaTotal": "38h",
+          "cursos": [
+            {
+              "nome": "JavaScript e HTML: desenvolva um jogo e pratique lógica de programação",
+              "periodo": "15/12/2022 a 15/12/2022",
+              "cargaHoraria": "16h"
+            },
+            {
+              "nome": "JavaScript e HTML: pratique lógica com desenhos, animações e um jogo",
+              "periodo": "15/12/2022 a 18/12/2022",
+              "cargaHoraria": "10h"
+            },
+            {
+              "nome": "Git e Github: controle e compartilhe seu código",
+              "periodo": "15/12/2022 a 18/12/2022",
+              "cargaHoraria": "6h"
+            }
+          ],
+          "conteudosComplementares": [
+            {"tipo": "Hipsters Ponto Tech", "titulo": "CSS: Cansei de Ser Simples – Hipsters #09", "cargaHoraria": "50min"},
+            {"tipo": "Alura+", "titulo": "Como Front-End utiliza o Figma", "cargaHoraria": "9min"},
+            {"tipo": "Site", "titulo": "Trello", "cargaHoraria": "0min"},
+            {"tipo": "Artigo", "titulo": "5 dúvidas de quem quer iniciar na carreira de programação | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Como escolher minha carreira em TI? | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "HTML, CSS e Javascript, quais as diferenças? | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Centralizando um elemento com CSS | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Guia de Unidades no CSS | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Git e Github: O que são, Como Configurar e Primeiros Passos | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Video", "titulo": "Alura Live #59 - Como entrar no mercado de trabalho de programação? - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Site", "titulo": "Trilha Iniciante em programação T4", "cargaHoraria": "0min"},
+            {"tipo": "Video", "titulo": "Como usar o fórum - Gui Lima - YouTube", "cargaHoraria": "60min"}
+          ]
+        },
+        {
+          "nome": "React T4 - ONE",
+          "cargaHorariaTotal": "62h",
+          "cursos": [
+            {
+              "nome": "React: desenvolvendo com JavaScript",
+              "periodo": "04/04/2023 a 07/04/2023",
+              "cargaHoraria": "14h"
+            },
+            {
+              "nome": "React: como os componentes funcionam",
+              "periodo": "07/04/2023 a 08/04/2023",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "React: desenvolvendo em React Router com JavaScript",
+              "periodo": "10/04/2023 a 18/04/2023",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "React: abstraindo seu CSS com Styled Components",
+              "periodo": "21/04/2023 a 24/04/2023",
+              "cargaHoraria": "6h"
+            },
+            {
+              "nome": "React: Function Components, uma abordagem moderna",
+              "periodo": "25/04/2023 a 29/04/2023",
+              "cargaHoraria": "12h"
+            },
+            {
+              "nome": "React: Hooks, Contextos e boas práticas",
+              "periodo": "30/04/2023 a 04/05/2023",
+              "cargaHoraria": "10h"
+            }
+          ],
+          "conteudosComplementares": [
+            {"tipo": "Alura+", "titulo": "Virtual DOM e React devTools", "cargaHoraria": "9min"},
+            {"tipo": "Alura+", "titulo": "Hooks do React: useState", "cargaHoraria": "28min"},
+            {"tipo": "Alura+", "titulo": "Conhecendo o Context API do React", "cargaHoraria": "13min"},
+            {"tipo": "Site", "titulo": "Trilha React", "cargaHoraria": "0min"},
+            {"tipo": "Video", "titulo": "Como usar o fórum - Gui Lima - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Site", "titulo": "Do Front End ao React - Hipsters Ponto Tech #258 - Hipsters Ponto TechHipsters Ponto Tech", "cargaHoraria": "0min"},
+            {"tipo": "Artigo", "titulo": "NPM vs Yarn", "cargaHoraria": "30min"},
+            {"tipo": "Site", "titulo": "Single Page Applications - Hipsters #16 - Hipsters Ponto TechHipsters Ponto Tech", "cargaHoraria": "0min"},
+            {"tipo": "Artigo", "titulo": "React: componentes com Styled Components", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Heroku, Vercel e outras opções de cloud como plataforma", "cargaHoraria": "30min"},
+            {"tipo": "Site", "titulo": "Trilha React com JavaScript T4", "cargaHoraria": "0min"},
+            {"tipo": "Site", "titulo": "Challenges ONE Front-end - AluraFlix Cursos Online", "cargaHoraria": "0min"}
+          ]
+        },
+        {
+          "nome": "Complementar Front End T4 - ONE",
+          "cargaHorariaTotal": "17h",
+          "cursos": [
+            {
+              "nome": "CSS: Flexbox e layouts responsivos",
+              "periodo": "13/03/2023 a 14/03/2023",
+              "cargaHoraria": "6h"
+            },
+            {
+              "nome": "JavaScript: validando formulários",
+              "periodo": "10/03/2023 a 21/03/2023",
+              "cargaHoraria": "8h"
+            }
+          ],
+          "conteudosComplementares": [
+            {"tipo": "Alura+", "titulo": "Como Front-End utiliza o Figma", "cargaHoraria": "9min"},
+            {"tipo": "Alura+", "titulo": "Data Attributes do HTML5", "cargaHoraria": "12min"},
+            {"tipo": "Alura+", "titulo": "Box Model e Box Sizing", "cargaHoraria": "12min"},
+            {"tipo": "Alura+", "titulo": "CSS FlexBox: distribua elementos de forma responsiva", "cargaHoraria": "29min"},
+            {"tipo": "Alura+", "titulo": "Iteradores em JavaScript: for e while", "cargaHoraria": "44min"},
+            {"tipo": "Alura+", "titulo": "VSCode: Dicas e truques", "cargaHoraria": "33min"},
+            {"tipo": "Alura+", "titulo": "Faça um for dentro de for e laços dentro de laços", "cargaHoraria": "8min"}
+          ]
+        },
+        {
+          "nome": "Front End T4 - ONE",
+          "cargaHorariaTotal": "89h",
+          "cursos": [
+            {
+              "nome": "Flexbox: posicione elementos na tela",
+              "periodo": "08/02/2023 a 10/02/2023",
+              "cargaHoraria": "9h"
+            },
+            {
+              "nome": "Layouts Responsivos: trabalhando com layouts mobile",
+              "periodo": "10/02/2023 a 13/02/2023",
+              "cargaHoraria": "7h"
+            },
+            {
+              "nome": "Arquitetura CSS: descomplicando os problemas",
+              "periodo": "14/02/2023 a 15/02/2023",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "JavaScript: explorando a linguagem",
+              "periodo": "16/02/2023 a 25/02/2023",
+              "cargaHoraria": "10h"
+            },
+            {
+              "nome": "JavaScript na Web: manipule o DOM com JavaScript",
+              "periodo": "25/02/2023 a 26/02/2023",
+              "cargaHoraria": "6h"
+            },
+            {
+              "nome": "JavaScript na Web: validação de Formulários e HTML5",
+              "periodo": "26/02/2023 a 27/02/2023",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "JavaScript: programando a Orientação a Objetos",
+              "periodo": "02/03/2023 a 04/03/2023",
+              "cargaHoraria": "10h"
+            },
+            {
+              "nome": "JavaScript: interfaces e Herança em Orientação a Objetos",
+              "periodo": "04/03/2023 a 06/03/2023",
+              "cargaHoraria": "12h"
+            },
+            {
+              "nome": "JS na web: CRUD com JavaScript assíncrono",
+              "periodo": "06/03/2023 a 10/03/2023",
+              "cargaHoraria": "8h"
+            }
+          ],
+          "conteudosComplementares": [
+            {"tipo": "Alura+", "titulo": "O que é acessibilidade?", "cargaHoraria": "13min"},
+            {"tipo": "Alura+", "titulo": "CSS FlexBox: distribua elementos de forma responsiva", "cargaHoraria": "29min"},
+            {"tipo": "Hipsters Ponto Tech", "titulo": "O Reino encantado do JavaScript – Hipsters #38", "cargaHoraria": "60min"},
+            {"tipo": "Alura+", "titulo": "Template String", "cargaHoraria": "6min"},
+            {"tipo": "Site", "titulo": "Trello", "cargaHoraria": "0min"},
+            {"tipo": "Video", "titulo": "Como usar o fórum - Gui Lima - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Artigo", "titulo": "Como funciona o import e export do JavaScript?", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Do zero para programador front-end", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Organizando o CSS no seu projeto", "cargaHoraria": "30min"},
+            {"tipo": "Video", "titulo": "Acessibilidade na Web - Alura Live#47 - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Artigo", "titulo": "Como lidar com os limites de resolução em sites responsivos?", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Porque usar ‘em’ no seu CSS hoje em dia?", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Criando componentes CSS com o padrão BEM", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "O que é o DOM? | Alura", "cargaHoraria": "30min"},
+            {"tipo": "Site", "titulo": "Alura Live: JavaScript", "cargaHoraria": "0min"},
+            {"tipo": "Artigo", "titulo": "Preenchendo formulário HTML automaticamente com AJAX", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Organize seu código JavaScript", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Herança em JavaScript | Alura", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Capturando valor do input: introdução a seletores", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Como utilizar o terminal integrado do Visual Studio Code", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Conhecendo Arrow Functions", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Mockando APIs REST com json-server", "cargaHoraria": "30min"},
+            {"tipo": "Site", "titulo": "Fórum de alunos da Alura", "cargaHoraria": "0min"},
+            {"tipo": "Site", "titulo": "Fórum da comunidade frontendbr no Github", "cargaHoraria": "0min"},
+            {"tipo": "Site", "titulo": "BrazilJS, o principal evento de JS do Brasil", "cargaHoraria": "0min"},
+            {"tipo": "Site", "titulo": "Trilha Front End T4", "cargaHoraria": "0min"}
+          ]
+        },
+        {
+          "nome": "Oracle Cloud Infrastructure - ONE",
+          "cargaHorariaTotal": "18h",
+          "cursos": [
+            {
+              "nome": "Oracle Cloud Infrastructure: implantação de uma aplicação na nuvem",
+              "periodo": "15/07/2023 a 18/07/2023",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "Oracle Cloud Infrastructure: banco de dados e infraestrutura como código",
+              "periodo": "21/07/2023 a 24/07/2023",
+              "cargaHoraria": "10h"
+            }
+          ],
+          "conteudosComplementares": []
+        },
+        {
+          "nome": "SQL com MySQL Server da Oracle",
+          "cargaHorariaTotal": "66h",
+          "cursos": [
+            {
+              "nome": "SQL com MySQL: manipule e consulte dados",
+              "periodo": "16/06/2023 a 23/06/2023",
+              "cargaHoraria": "12h"
+            },
+            {
+              "nome": "Consultas SQL: avançando no SQL com MySQL",
+              "periodo": "23/06/2023 a 29/06/2023",
+              "cargaHoraria": "14h"
+            },
+            {
+              "nome": "Comandos DML: manipulação de dados com MySQL",
+              "periodo": "29/06/2023 a 05/07/2023",
+              "cargaHoraria": "10h"
+            },
+            {
+              "nome": "Procedures SQL: executando código no MySQL",
+              "periodo": "07/07/2023 a 12/07/2023",
+              "cargaHoraria": "14h"
+            },
+            {
+              "nome": "Administração do MySQL: segurança e otimização do banco",
+              "periodo": "12/07/2023 a 15/07/2023",
+              "cargaHoraria": "16h"
+            }
+          ],
+          "conteudosComplementares": []
+        },
+        {
+          "nome": "SQL com MySQL Server da Oracle - ONE",
+          "cargaHorariaTotal": "70h",
+          "cursos": [
+            {
+              "nome": "SQL com MySQL: manipule e consulte dados",
+              "periodo": "16/06/2023 a 23/06/2023",
+              "cargaHoraria": "12h"
+            },
+            {
+              "nome": "Consultas SQL: avançando no SQL com MySQL",
+              "periodo": "23/06/2023 a 29/06/2023",
+              "cargaHoraria": "14h"
+            },
+            {
+              "nome": "Comandos DML: manipulação de dados com MySQL",
+              "periodo": "29/06/2023 a 05/07/2023",
+              "cargaHoraria": "10h"
+            },
+            {
+              "nome": "Procedures SQL: executando código no MySQL",
+              "periodo": "07/07/2023 a 12/07/2023",
+              "cargaHoraria": "14h"
+            },
+            {
+              "nome": "Administração do MySQL: segurança e otimização do banco",
+              "periodo": "12/07/2023 a 15/07/2023",
+              "cargaHoraria": "16h"
+            }
+          ],
+          "conteudosComplementares": [
+            {"tipo": "Alura+", "titulo": "Como instalar o MySQL no Linux", "cargaHoraria": "8min"},
+            {"tipo": "Video", "titulo": "Banco de dados como serviço na nuvem- como funciona? - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Video", "titulo": "O que é Oracle Autonomous Data Base? - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Video", "titulo": "Banco de Dados MySQL com Narciso Junior | Pílulas ONE - YouTube", "cargaHoraria": "60min"}
+          ]
+        },
+        {
+          "nome": "Business Agility T4 - ONE",
+          "cargaHorariaTotal": "27h",
+          "cursos": [
+            {
+              "nome": "Agilidade: promovendo a transformação ágil",
+              "periodo": "27/01/2023 a 31/01/2023",
+              "cargaHoraria": "6h"
+            },
+            {
+              "nome": "Gestão Ágil: liderando a mudança em um ambiente de agilidade",
+              "periodo": "31/01/2023 a 31/01/2023",
+              "cargaHoraria": "6h"
+            },
+            {
+              "nome": "A Empresa Ágil: implemente o Business Agility nas organizações",
+              "periodo": "31/01/2023 a 31/01/2023",
+              "cargaHoraria": "6h"
+            },
+            {
+              "nome": "Organização de Equipes Ágeis: os papéis existentes em uma equipe",
+              "periodo": "31/01/2023 a 31/01/2023",
+              "cargaHoraria": "6h"
+            }
+          ],
+          "conteudosComplementares": [
+            {"tipo": "Hipsters Ponto Tech", "titulo": "Business Agility – Hipsters #147", "cargaHoraria": "40min"},
+            {"tipo": "Hipsters Ponto Tech", "titulo": "Gestão com Management 3.0 – Hipsters #80", "cargaHoraria": "50min"},
+            {"tipo": "Hipsters Ponto Tech", "titulo": "Squads não-suicidas – Hipsters #08", "cargaHoraria": "43min"},
+            {"tipo": "Site", "titulo": "Trilha Business A. T4", "cargaHoraria": "0min"}
+          ]
+        },
+        {
+          "nome": "Desenvolvimento Pessoal T4 - ONE",
+          "cargaHorariaTotal": "38h",
+          "cursos": [
+            {
+              "nome": "LinkedIn: Como fazer o seu perfil trabalhar para você",
+              "periodo": "26/12/2022 a 05/01/2023",
+              "cargaHoraria": "4h"
+            },
+            {
+              "nome": "Foco: trazendo mais resultados para o dia a dia",
+              "periodo": "28/11/2022 a 07/01/2023",
+              "cargaHoraria": "10h"
+            },
+            {
+              "nome": "Hábitos: da produtividade às metas pessoais",
+              "periodo": "09/01/2023 a 16/01/2023",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "Produtividade parte 1: estratégias para o dia a dia",
+              "periodo": "26/01/2023 a 31/01/2023",
+              "cargaHoraria": "6h"
+            }
+          ],
+          "conteudosComplementares": [
+            {"tipo": "Hipsters Ponto Tech", "titulo": "Produtividade – Hipsters #76", "cargaHoraria": "47min"},
+            {"tipo": "Artigo", "titulo": "Técnica Pomodoro: gerencie seu tempo com simplicidade | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Video", "titulo": "Controle seu foco, aumente sua produtividade - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Video", "titulo": "Como é o trabalho remoto? #HipstersPontoTube - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Artigo", "titulo": "Planejando meus estudos | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "Estudar todos os dias, e o que mais? As dicas do Aluno Alura Eduardo Branquinho", "cargaHoraria": "30min"},
+            {"tipo": "Video", "titulo": "Alura Live #51 - Hábitos: como ser mais produtivo? - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Artigo", "titulo": "Hábitos: Como melhorá-los | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Video", "titulo": "Hábitos de estudos - Alura Live #48 - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Artigo", "titulo": "Produtividade: Responder email, fazer reunião ou trabalhar? | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Artigo", "titulo": "9 ferramentas que vão tornar o seu trabalho remoto mais produtivo | Alura Cursos Online", "cargaHoraria": "30min"},
+            {"tipo": "Video", "titulo": "Produtividade para estudar | #AluraMais - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Video", "titulo": "O que fazer para se manter focado? - YouTube", "cargaHoraria": "60min"},
+            {"tipo": "Site", "titulo": "Trilha Dsnv. Pessoal T4", "cargaHoraria": "0min"}
+          ]
+        },
+        {
+          "nome": "Empreendedorismo T4 - ONE",
+          "cargaHorariaTotal": "46h",
+          "cursos": [
+            {
+              "nome": "Lean Startup: primeiros passos da sua Startup enxuta",
+              "periodo": "13/03/2023 a 01/04/2023",
+              "cargaHoraria": "5h"
+            },
+            {
+              "nome": "Empreendedorismo: da ideia ao plano de negócios",
+              "periodo": "31/03/2023 a 06/04/2023",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "Empreendedorismo: abrindo sua empresa do jeito certo",
+              "periodo": "02/04/2023 a 15/04/2023",
+              "cargaHoraria": "10h"
+            },
+            {
+              "nome": "Pitch entrevistas: Faça apresentações de impacto",
+              "periodo": "03/04/2023 a 03/04/2023",
+              "cargaHoraria": "6h"
+            },
+            {
+              "nome": "Business Model Canvas parte I: um modelo poderoso para o seu negócio",
+              "periodo": "13/03/2023 a 30/03/2023",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "Business Model Canvas parte II: avance no seu modelo de negócios",
+              "periodo": "30/03/2023 a 31/03/2023",
+              "cargaHoraria": "8h"
+            }
+          ],
+          "conteudosComplementares": [
+            {"tipo": "Artigo", "titulo": "Elevator pitch: aprenda a usar o método eficiente de apresentação", "cargaHoraria": "30min"},
+            {"tipo": "Site", "titulo": "Trilha Empre. T4", "cargaHoraria": "0min"}
+          ]
+        }
+      ],
+      "imersoes": [
+        {
+          "nome": "Front-end",
+          "cargaHorariaTotal": "10h",
+          "cursos": [
+            {"nome": "Imersão Front-End", "cargaHoraria": "5h"},
+            {"nome": "Imersão Front-End 2ª Edição", "cargaHoraria": "5h"}
+          ]
+        }
+      ],
+      "cursosAvulsos": [
+        {
+          "nome": "Front-end",
+          "cargaHorariaTotal": "32h",
+          "cursos": [
+            {
+              "nome": "HTML5 e CSS3 parte 1: crie uma página da Web",
+              "periodo": "09/12/2022 a 11/12/2022",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "HTML5 e CSS3 parte 2: posicionamento, listas e navegação",
+              "periodo": "11/12/2022 a 12/12/2022",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "HTML5 e CSS3 parte 3: trabalhando com formulários e tabelas",
+              "periodo": "12/12/2022 a 14/12/2022",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "HTML5 e CSS3 parte 4: avançando no CSS",
+              "periodo": "14/12/2022 a 15/12/2022",
+              "cargaHoraria": "8h"
+            }
+          ]
+        },
+        {
+          "nome": "DevOps",
+          "cargaHorariaTotal": "14h",
+          "cursos": [
+            {
+              "nome": "DevOps: explorando conceitos, comandos e scripts no Linux CLI",
+              "periodo": "01/05/2025 a 08/05/2025",
+              "cargaHoraria": "8h"
+            },
+            {
+              "nome": "DevOps: trabalhando com tráfego seguro em comunicações web",
+              "periodo": "21/05/2025 a 26/05/2025",
+              "cargaHoraria": "6h"
+            }
+          ]
+        },
+        {
+          "nome": "Data Science",
+          "cargaHorariaTotal": "20h",
+          "cursos": [
+            {
+              "nome": "Python para Data Science: Funções, Pacotes e Pandas",
+              "periodo": "20/09/2023 a 03/10/2023",
+              "cargaHoraria": "10h"
+            },
+            {
+              "nome": "Python para Data Science",
+              "periodo": "05/09/2023 a 19/09/2023",
+              "cargaHoraria": "10h"
+            }
+          ]
+        }
+      ],
+      "linkCertificado": "https://cursos.alura.com.br/user/jose25henrique-ramos2019/fullCertificate/5f8154c2166b0f673331604ec1c0e6c6"
+    }
+  }

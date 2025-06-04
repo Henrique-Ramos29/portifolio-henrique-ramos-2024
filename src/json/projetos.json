@@ -1,0 +1,65 @@
+[
+    {
+      "id": 1,
+      "imagem": "./../../public/cep.png",
+      "subtitulo": "JavaScript na Web: manipule o DOM",
+      "demoLink": "https://manupule-dom-com-javascript.vercel.app/",
+      "repositorioLink": "https://github.com/Henrique-Ramos29/Manupule_DOM_com_JAVA_SCRIPT.git"
+    },
+    {
+      "id": 2,
+      "imagem": "./../../public/ola-mundo.png",
+      "subtitulo": "React routes com java script",
+      "demoLink": "https://ola-mundo-yssu.vercel.app/",
+      "repositorioLink": "https://github.com/Henrique-Ramos29/Ola-Mundo.git"
+    },
+    {
+      "id": 3,
+      "imagem": "./../../public/comedy-flix.png",
+      "subtitulo": "Web site usado flexbox",
+      "demoLink": "https://comedy-flix-challenge-alura-oracle.vercel.app/",
+      "repositorioLink": "https://github.com/Henrique-Ramos29/comedy-flix-challenge-alura-oracle"
+    },
+    {
+      "id": 4,
+      "imagem": "./../../public/organo.png",
+      "subtitulo": "Organo React.js",
+      "demoLink": "https://organo-alura-oracle.vercel.app/",
+      "repositorioLink": "https://github.com/Henrique-Ramos29/Organo__Alura_Oracle.git"
+    },
+    {
+      "id": 5,
+      "imagem": "./../../public/criptografa.png",
+      "subtitulo": "Oracle ONE challenge criptografia",
+      "demoLink": "https://oracle-one-challenge-criptografia.vercel.app/",
+      "repositorioLink": "https://github.com/Henrique-Ramos29/Oracle-ONE-Challenge-Criptografia.git"
+    },
+    {
+      "id": 6,
+      "imagem": "./../../public/barbearia-ramos.png",
+      "subtitulo": "Componetes React.js",
+      "demoLink": "https://barbearia-ramos2025.web.app/",
+      "repositorioLink": "https://github.com/Henrique-Ramos29/Barbearia_Ramos.git"
+    },
+    {
+      "id": 7,
+      "imagem": "./../../public/Api.png",
+      "subtitulo": "Api Brasileirão Serie A 2024",
+      "demoLink": "https://api-futebol-two.vercel.app/",
+      "repositorioLink": "https://github.com/Henrique-Ramos29/Api-Futebol"
+    },
+    {
+      "id": 8,
+      "imagem": "./../../public/alurinha.png",
+      "subtitulo": "Flex-box - Css",
+      "demoLink": "https://web-alurinha.vercel.app/",
+      "repositorioLink": "https://github.com/Henrique-Ramos29/Web-Alurinha"
+    },
+    {
+        "id": 9,
+        "imagem": "./../../public/chatbox.png",
+        "subtitulo": "Chatbox com IA gemini com React",
+        "demoLink": "https://chat-bot-infusao.web.app/",
+        "repositorioLink": "https://github.com/Henrique-Ramos29/chatBox-irmesao-alura-ai.git"
+      }
+  ]

@@ -10,14 +10,13 @@ const Sobre = () => {
          <motion.div className='containerConteudo'>
             <motion.img className='fotoSobre' src={FotoSobreMim} alt='foto henrique ramos' />
             <p className='textoSobre'>
-
-               "Olá, eu sou Henrique Ramos! Atualmente estou em transição de carreira, e minha jornada na programação começou em 2022.
-               Comecei estudando lógica de programação em JavaScript, e logo depois fui selecionado para o programa Oracle One Next Education.
-               Lá, tive o privilégio de me especializar em Front-end na Alura.
-
-               Hoje, estou focado no desenvolvimento com HTML5, CSS3, JavaScript e React, sempre criando projetos próprios e enfrentando
-               novos desafios. Estou dedicado a expandir minhas habilidades e contribuir com projetos que fazem a diferença. Sinto que essa
-               é a nova etapa da minha vida profissional, e estou empolgado para compartilhar essa caminhada com vocês!"
+               Olá, eu sou Henrique Ramos! Atualmente estou em transição de carreira, e minha jornada na programação começou em 2022.
+               Comecei estudando lógica de programação em JavaScript e fui selecionado para o programa One Oracle Next Education, 
+               onde tive o privilégio de me especializar em Front-end na Alura. Recentemente, fui contemplado 
+               pela AlumniOne e iniciei um novo curso de formação OCI (Oracle Cloud Infrastructure)
+                na One Oracle Next Education em parceria com a Alura. Hoje, estou focado no desenvolvimento com HTML5, CSS3, JavaScript e React, sempre criando projetos 
+                próprios e enfrentando novos desafios. Estou dedicado a expandir minhas habilidades e contribuir com projetos que fazem a diferença. Sinto que essa é a nova 
+                etapa da minha vida profissional, e estou empolgado para compartilhar essa caminhada com vocês!
             </p>
          </motion.div>
       </motion.div>

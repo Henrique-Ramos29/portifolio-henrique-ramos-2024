@@ -10,6 +10,8 @@ import PaginaPadrao from './components/PaginaPadrao';
 import ScrollToTop from './components/ScrollToTop';
 import Contato from './components/Contato';
 import ThemeProvider from './components/Tema/ThemeContext';
+import MeusCursos from './components/MeuCertificado';
+import MeuCertificado from './components/MeuCertificado';
 
 
 
@@ -28,6 +30,7 @@ const App = () => {
             <Route path='/formacao' element={<Formacao />} />
             <Route path='/projetos' element={<Projetos />} />
             <Route path='/contato' element={<Contato />} />
+            <Route path='/meu-certificado' element={<MeuCertificado />} />
       </Routes>
         <Rodape />
     </BrowserRouter>
