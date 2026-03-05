@@ -1,34 +1,95 @@
-.containerBanner {
+.banner-section {
+    width: 100%;
+    min-height: 100vh;
     display: flex;
-    color: var(--cor-laranja);
-    justify-content: space-around;
-
-}
-
-.tituloBanner {
+    align-items: center;
+    justify-content: center;
+    /* IMPORTANTE: Espaço para o menu não cobrir o banner */
+    padding-top: 100px; 
+    overflow: hidden;
+  }
+  
+  .banner-container {
+    max-width: 1200px;
+    width: 90%;
+    display: grid;
+    /* Desktop: Imagem (1fr) e Texto (1fr) */
+    grid-template-columns: 1fr 1.2fr; 
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  /* Estilo da Imagem */
+  .banner-image-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .imagem-astronauta-img {
+    width: 100%;
+    max-width: 450px; /* Tamanho controlado */
+    height: auto;
+    /* Animação suave de flutuar */
+    animation: flutuar 5s ease-in-out infinite;
+  }
+  
+  /* Estilo do Texto */
+  .banner-text-box {
     display: flex;
     flex-direction: column;
-    font-size: 20px;
-    margin-top: 10rem;
-}
-
-@media (min-width: 370px) and (max-width: 460px) {
-    .containerBanner {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 60px;
+    justify-content: center;
+  }
+  
+  .conteudo-texto h1 {
+    font-size: 2.8rem;
+    color: var(--cor-laranja);
+    margin-bottom: 1rem;
+  }
+  
+  .btn-contato-banner {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 12px 35px;
+    background-color: var(--cor-laranja);
+    color: white;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: 0.3s;
+    width: fit-content;
+  }
+  
+  /* Keyframes para a animação de flutuar */
+  @keyframes flutuar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  
+  /* RESPONSIVIDADE (Celular e Tablet) */
+  @media (max-width: 968px) {
+    .banner-container {
+      /* No mobile vira uma coluna só */
+      grid-template-columns: 1fr; 
+      text-align: center;
+      gap: 3rem;
     }
-
-    .imagemAustronauta {
-        width: 365px;
-        height: 382px;
-        margin-bottom: 37px;
-        
+  
+    .banner-section {
+      padding-top: 120px; /* Mais espaço no mobile */
+      padding-bottom: 50px;
+      height: auto; /* Deixa o conteúdo crescer no mobile */
     }
-
-    .tituloBanner {
-        font-size: 18px;
-        margin-top: 75px;
+  
+    .banner-text-box {
+      align-items: center; /* Centraliza o texto e botão no mobile */
     }
-}
+  
+    .imagem-astronauta-img {
+      max-width: 300px; /* Menor no celular */
+    }
+  
+    .conteudo-texto h1 {
+      font-size: 2rem;
+    }
+  }

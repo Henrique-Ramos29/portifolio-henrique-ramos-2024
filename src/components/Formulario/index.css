@@ -1,51 +1,101 @@
+.wrapperFormulario {
+    width: 100%;
+    padding: 100px 5%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--cor-primaria);
+}
+
 .containerFormulario { 
+    width: 100%;
+    max-width: 600px;
+    background-color: var(--cor-secundaria);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid var(--border);
     display: flex;
     flex-direction: column;
-    grid: 10px;
-    align-items: center;
-    color: var(--cor-laranja);
+    gap: 1.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
 }
 
 .tituloContato {
-    font-size: 27px;
-    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--cor-laranja);
+    text-align: center;
 }
 
 .subtituloContato {
-    font-size: 15px;
+    font-size: 1rem;
     text-align: center;
-    margin-bottom: 38px;
+    color: var(--cor-texto-secundario);
+    margin-bottom: 1rem;
 }
 
-.buttonContato { 
-    width: 82px;
-    height: 29px;
-    border-color: var(--cor-laranja);
+.fieldGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.fieldGroup label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--cor-texto);
+    margin-left: 5px;
 }
 
 .input {
-    border-radius: 3px;
-    margin-bottom: 10px;
-    border: solid var(--cor-laranja);
-    width: 500px;
+    width: 100%;
+    padding: 12px 15px;
+    background-color: var(--cor-primaria);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    color: var(--cor-texto);
+    font-size: 1rem;
+    transition: var(--transicao);
 }
 
-.nomeInput { 
-       margin-bottom: 10px;
+/* Efeito ao clicar no campo */
+.input:focus {
+    outline: none;
+    border-color: var(--cor-laranja);
+    box-shadow: 0 0 0 2px rgba(249, 115, 22, 0.2);
 }
 
-.buttonContato {
+.textarea {
+    resize: none; /* Impede o usuário de bagunçar o layout */
+}
+
+.buttonContato { 
+    width: 100%;
+    padding: 15px;
+    background-color: var(--cor-laranja);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
     margin-top: 10px;
-    border-radius: 6px;
+    transition: var(--transicao);
 }
 
-@media (min-width: 370px) and (max-width: 460px)  {
-    .input {
-        width: 393px;
+.buttonContato:hover {
+    background-color: var(--cor-laranja-hover);
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .containerFormulario {
+        padding: 2rem 1.5rem;
     }
 
-    .containerFormulario {
-        margin-top: 60px;
-        gap: 5px;
+    .tituloContato {
+        font-size: 1.6rem;
+    }
+
+    .wrapperFormulario {
+        padding: 60px 5%;
     }
 }

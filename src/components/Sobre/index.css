@@ -1,70 +1,120 @@
-.containerSobre {
-    color: var(--cor-laranja);
+.section-sobre {
+    width: 100%;
+    padding: 80px 0;
+    background-color: var(--cor-primaria);
+    overflow: hidden;
+}
 
+.container-sobre-principal {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    /* Imagem menor (1fr) e Texto maior (1.5fr) */
+    grid-template-columns: 1fr 1.5fr;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+/* BOX DA FOTO */
+.box-foto-sobre {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.foto-perfil {
+    width: 100%;
+    max-width: 320px;
+    border-radius: 15px;
+    border: 4px solid var(--cor-laranja);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.foto-perfil:hover {
+    transform: scale(1.02);
+}
+
+/* REDES SOCIAIS */
+.containerRedeSociais {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.icone-link {
+    color: var(--cor-laranja);
+    transition: 0.3s;
+}
+
+.icone-link:hover {
+    color: var(--cor-texto);
+    transform: translateY(-5px);
+}
+
+/* BOX DO TEXTO */
+.box-texto-sobre {
+    text-align: left;
 }
 
 .tituloSobre {
-    text-align: center;
+    font-size: 2.5rem;
+    color: var(--cor-laranja);
+    margin-bottom: 10px;
+}
+
+.decoracao-titulo {
+    width: 60px;
+    height: 4px;
+    background-color: var(--cor-laranja);
+    margin-bottom: 30px;
+    border-radius: 2px;
 }
 
 .textoSobre {
-    margin-top: 25px;
-    text-align: left;
-    font-size: 17px;
-    margin-right: 100px;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--cor-texto);
+    margin-bottom: 20px;
+    text-align: justify;
 }
 
-
-.containerConteudo {
-    display: flex;
-    margin: 50px;
-    gap: 60px;
+.textoSobre strong {
+    color: var(--cor-laranja);
+    font-weight: 600;
 }
 
-.fotoSobre {
-    width: 250px;
-    margin-left: 100px;
-    border-radius: 6px;
-}
+/* RESPONSIVIDADE */
+@media (max-width: 968px) {
+    .container-sobre-principal {
+        grid-template-columns: 1fr; /* Vira uma coluna no tablet/celular */
+        gap: 40px;
+        text-align: center;
+    }
 
-.containerRedeSociais {
-    display: flex;
-    margin-top: 30px;
-    gap: 40px;
-    justify-content: center;
-}
-
-.icone:hover {
-   color: var(--cor-branco)
-}
-
-@media (min-width: 370px) and (max-width: 460px)  {
-
-    .containerConteudo {
+    .box-texto-sobre {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: -17px;
-        gap: 0px;
-    }
-    
-    .tituloSobre {
-        font-size: 27px;
-        margin: 0px;
-        margin-bottom: 47px;
-        margin-top: 24px;
     }
 
-    .fotoSobre {
-        width: 220px;
-        height: 330px;
-        margin-right: 105px;
+    .box-foto-sobre {
+        order: -1; /* Foto sempre em cima no mobile */
+    }
+
+    .foto-perfil {
+        max-width: 250px;
+    }
+
+    .tituloSobre {
+        font-size: 2rem;
     }
 
     .textoSobre {
-        text-align: justify;
-        margin: 10px;
-        margin-bottom: 38px;
+        font-size: 1rem;
+        text-align: center; /* Texto centralizado no mobile fica melhor */
     }
-
 }

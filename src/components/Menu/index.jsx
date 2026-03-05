@@ -1,94 +1,76 @@
 import React, { useContext, useState } from 'react';
-import { motion } from 'framer-motion';
-import { FiList, FiXCircle } from "react-icons/fi"
-import { FaUserAstronaut, FaUserGraduate, FaSkiing, FaProjectDiagram, FaTelegramPlane, FaHome } from "react-icons/fa";
-import { GrCertificate } from "react-icons/gr";
-import './index.css';
-
-import { Link, useNavigate } from 'react-router-dom'
-import ToggleTheme from '../Tema/ToggleTheme';
+import { Link, useLocation } from 'react-router-dom';
+import { motion, AnimatePresence } from 'framer-motion';
+import { FiMenu, FiX } from "react-icons/fi";
 import { ThemeContext } from '../Tema/ThemeContext';
+import ToggleTheme from '../Tema/ToggleTheme';
+import './Menu.css';
 
 const Menu = () => {
+  const [isOpen, setIsOpen] = useState(false);
   const { theme } = useContext(ThemeContext);
+  const location = useLocation();
 
-  const [menuOpen, setOpenMenu] = useState(false);
-
-  const navigate = useNavigate();
-
-  const toggleMenu = (path) => {
-    setOpenMenu(false);
-    navigate(path);
-  }
+  const menuItems = [
+    { name: 'Home', path: '/' },
+    { name: 'Sobre', path: '/sobre' },
+    { name: 'Projetos', path: '/projetos' },
+    { name: 'Skills', path: '/softSkills' },
+    { name: 'Certificados', path: '/meu-certificado' },
+    { name: 'Contato', path: '/contato' },
+  ];
 
   return (
-    <motion.div className="containerMenu">
-      <motion.h2 className='tituloMenu'>Portifolio</motion.h2>
-      <div className="containerLista">
-        <div onClick={() => setOpenMenu(!menuOpen)} style={{ cursor: 'pointer' }}>
-          {menuOpen ? <FiXCircle size={30} /> : <FiList size={30} />}
+    <nav className={`navbar ${theme}`}>
+      <div className="nav-container">
+        <Link to="/" className="logo">
+          HENRIQUE<span>.DEV</span>
+        </Link>
+
+        {/* Desktop Navigation */}
+        <ul className="nav-links">
+          {menuItems.map((item) => (
+            <li key={item.path}>
+              <Link 
+                to={item.path} 
+                className={location.pathname === item.path ? 'active' : ''}
+              >
+                {item.name}
+              </Link>
+            </li>
+          ))}
+          <ToggleTheme />
+        </ul>
+
+        {/* Mobile Toggle */}
+        <div className="mobile-menu-icon" onClick={() => setIsOpen(!isOpen)}>
+          {isOpen ? <FiX size={30} /> : <FiMenu size={30} />}
         </div>
-        {menuOpen && (
-          <nav className={`floating-menu ${theme}`}>
-            <ul class="content">
-
-              <li className='link'>
-                <Link to='/' onClick={() => toggleMenu('/')} style={{ display: 'flex', alignItems: 'center' }} >
-                  <FaHome size={20} style={{ marginRight: '8px' }} />
-                  <span>Home</span>
-                </Link>
-              </li>
-
-              <li className='link'>
-                <Link to='/sobreMim' onClick={() => toggleMenu('/sobreMim')} style={{ display: 'flex', alignItems: 'center' }}>
-                  <FaUserAstronaut size={20} style={{ marginRight: '8px' }} />
-                  <span>Sobre mim</span>
-                </Link>
-              </li>
-
-              <li className='link'>
-                <Link to='/formacao' onClick={() => toggleMenu('/formacao')} style={{ display: 'flex', alignItems: 'center' }}>
-                  <FaUserGraduate size={20} style={{ marginRight: '8px' }} />
-                  <span>Formação</span>
-                </Link>
-              </li>
-
-              <li className='link'>
-                <Link to='/softSkills' onClick={() => toggleMenu('/softSkills')} style={{ display: 'flex', alignItems: 'center' }}>
-                  <FaSkiing size={20} style={{ marginRight: '8px' }} />
-                  <span>Soft skills</span>
-                </Link>
-              </li>
-              <li className='link'>
-                <Link to='/projetos' onClick={() => toggleMenu('/projetos')} style={{ display: 'flex', alignItems: 'center' }}>
-                  <FaProjectDiagram size={20} style={{ marginRight: '8px' }} />
-                  <span>Projeto</span>
-                </Link>
-              </li>
-
-              <li className='link'>
-                <Link to='/contato' onClick={() => toggleMenu('/contato')} style={{ display: 'flex', alignItems: 'center' }}  >
-                  <FaTelegramPlane size={20} style={{ marginRight: '8px' }} />
-                  <span>Contato</span>
-                </Link>
-              </li>
-              
-              <li className='link'>
-                <Link to='/meu-certificado' onClick={() => toggleMenu('/contato')} style={{ display: 'flex', alignItems: 'center' }}  >
-                  <GrCertificate size={20} style={{ marginRight: '8px' }} />
-                  <span>Meu Certificado</span>
-                </Link>
-              </li>
-              <li className='buttonThemeLink'>
-                <ToggleTheme />
-              </li>
-            </ul>
-          </nav>
-        )}
-
       </div>
-    </motion.div>
-  )
-}
+
+      {/* Mobile Sidebar */}
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div 
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ type: 'tween' }}
+            className="mobile-sidebar"
+          >
+            <ul className="mobile-nav-links">
+              {menuItems.map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path} onClick={() => setIsOpen(false)}>{item.name}</Link>
+                </li>
+              ))}
+              <ToggleTheme />
+            </ul>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </nav>
+  );
+};
 
 export default Menu;

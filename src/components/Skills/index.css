@@ -1,37 +1,88 @@
 .containerSkills {
-    color: var(--cor-laranja);
+    padding: 100px 5%;
     text-align: center;
-    margin: 25px;
+    background-color: var(--cor-primaria);
 }
 
 .tituloSkills {
-    font-size: 26px;
-    margin-top: 0 auto;
+    font-size: 2.5rem;
+    color: var(--cor-laranja);
+    margin-bottom: 10px;
 }
 
-.containerIcone {
+.decoracao-titulo {
+    width: 80px;
+    height: 4px;
+    background-color: var(--cor-laranja);
+    margin: 0 auto 50px;
+    border-radius: 2px;
+}
+
+.gridIcones {
+    display: grid;
+    /* Grid responsivo: cria colunas de no mínimo 120px e preenche o espaço */
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 30px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.skill-card {
+    background: var(--cor-secundaria);
+    padding: 25px 15px;
+    border-radius: 15px;
+    border: 1px solid var(--border);
     display: flex;
-    justify-content: center;
-    gap: 5em;
-    margin: 30px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    transition: var(--transicao);
+    cursor: default;
 }
 
-@media (min-width: 370px) and (max-width: 460px) {
+.skill-card:hover {
+    border-color: var(--cor-laranja);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
-    .containerSkills {
-        margin-top: 28px;
+.skill-card:hover .icone-box {
+    color: var(--cor-laranja);
+    transform: scale(1.1);
+}
+
+.icone-box {
+    font-size: 3.5rem; /* Tamanho do ícone */
+    color: var(--cor-texto-secundario);
+    transition: var(--transicao);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-card span {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--cor-texto);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .gridIcones {
+        grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+        gap: 15px;
     }
 
-    .containerIcone {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 3%;
+    .skill-card {
+        padding: 15px 10px;
+    }
+
+    .icone-box {
+        font-size: 2.8rem;
     }
 
     .tituloSkills {
-        font-size: 27px;
-        margin-top: 16px;
-        margin-bottom: 24px;
+        font-size: 1.8rem;
     }
-
 }

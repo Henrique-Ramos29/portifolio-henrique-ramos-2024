@@ -1,121 +1,92 @@
 import React from 'react';
 import certificadoData from '../../json/certificadoAlura.json';
 import { motion } from 'framer-motion';
-import './index.css'; // Importe o CSS para este componente
+import { FiAward, FiCheckCircle, FiExternalLink, FiBookOpen } from "react-icons/fi";
+import './index.css';
 
 const MeuCertificado = () => {
   const { certificado, informacoesAlura } = certificadoData;
 
   return (
-    <motion.div id="meu-certificado" className="meu-certificado-container">
-      <h2 className="certificado-titulo">Meu Certificado Alura</h2>
+    <motion.div 
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      className="meu-certificado-container"
+    >
+      <header className="certificado-header-main">
+        <FiAward className="icon-main" />
+        <h2 className="certificado-titulo">Certificações & Cursos</h2>
+        <div className="decoracao-titulo"></div>
+        
+        <div className="header-status">
+          <p className="aluno-nome">Dev: <strong>{certificado.nomeCompleto}</strong></p>
+          <p className="periodo-certificacao">
+            Jornada de aprendizado: <span>{certificado.periodo.inicio} — {certificado.periodo.fim}</span>
+          </p>
+          <a 
+            href={certificado.linkCertificado} 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="btn-certificado-online"
+          >
+            <FiExternalLink /> Ver Certificado Oficial Online
+          </a>
+        </div>
+      </header>
 
-      <div className="certificado-header">
-        <p className="aluno-nome">Certificamos que <strong>{certificado.nomeCompleto}</strong></p>
-        <p className="periodo-certificacao">
-          concluiu os cursos, formações e imersões a seguir, no período de{' '}
-          <strong>{certificado.periodo.inicio} a {certificado.periodo.fim}</strong>.
-        </p>
-        <a 
-          href={certificado.linkCertificado} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="certificado-link-completo"
-        >
-          Ver Certificado Completo Online
-        </a>
-      </div>
-
-      {/* Seção de Formações */}
-      <section className="secao-formacoes">
-        <h3>Formações</h3>
-        {certificado.formacoes.length > 0 ? (
-          certificado.formacoes.map((formacao, index) => (
-            <div key={index} className="card-formacao">
-              <h4 className="nome-formacao">{formacao.nome} - {formacao.cargaHorariaTotal}</h4>
-              
-              {formacao.cursos.length > 0 && (
-                <div className="subsecao">
-                  <h5>Cursos:</h5>
-                  <ul className="lista-cursos">
-                    {formacao.cursos.map((curso, cursoIndex) => (
-                      <li key={cursoIndex}>
-                        {curso.nome} (de {curso.periodo}) {curso.cargaHoraria}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {formacao.conteudosComplementares.length > 0 && (
-                <div className="subsecao">
-                  <h5>Conteúdos Complementares:</h5>
-                  <ul className="lista-conteudos">
-                    {formacao.conteudosComplementares.map((conteudo, conteudoIndex) => (
-                      <li key={conteudoIndex}>
-                        <strong>{conteudo.tipo}</strong>: {conteudo.titulo} - {conteudo.cargaHoraria}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-            </div>
-          ))
-        ) : (
-          <p>Nenhuma formação encontrada.</p>
-        )}
-      </section>
-
-      {/* Seção de Imersões */}
-      <section className="secao-imersoes">
-        <h3>Imersões</h3>
-        {certificado.imersoes.length > 0 ? (
-          certificado.imersoes.map((imersao, index) => (
-            <div key={index} className="card-imersao">
-              <h4 className="nome-imersao">{imersao.nome} - {imersao.cargaHorariaTotal}</h4>
-              {imersao.cursos && imersao.cursos.length > 0 && (
-                <ul className="lista-cursos">
-                  {imersao.cursos.map((curso, cursoIndex) => (
-                    <li key={cursoIndex}>
-                      {curso.nome} - {curso.cargaHoraria}
-                    </li>
+      <div className="grid-conquistas">
+        {/* Seção de Formações */}
+        <section className="secao-conquista">
+          <h3 className="subtitulo-secao"><FiBookOpen /> Formações Acadêmicas</h3>
+          <div className="lista-cards">
+            {certificado.formacoes.map((formacao, index) => (
+              <div key={index} className="card-conquista formacao-border">
+                <h4 className="nome-item">{formacao.nome} <span className="carga-horaria">{formacao.cargaHorariaTotal}</span></h4>
+                
+                <div className="detalhes-lista">
+                  {formacao.cursos.map((curso, i) => (
+                    <div key={i} className="item-curso">
+                      <FiCheckCircle className="check-icon" />
+                      <span>{curso.nome}</span>
+                    </div>
                   ))}
-                </ul>
-              )}
-            </div>
-          ))
-        ) : (
-          <p>Nenhuma imersão encontrada.</p>
-        )}
-      </section>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
 
-      {/* Seção de Cursos Avulsos */}
-      <section className="secao-cursos-avulsos">
-        <h3>Cursos Avulsos</h3>
-        {certificado.cursosAvulsos.length > 0 ? (
-          certificado.cursosAvulsos.map((categoriaCurso, index) => (
-            <div key={index} className="card-curso-avulso">
-              <h4 className="nome-categoria-curso">{categoriaCurso.nome} - {categoriaCurso.cargaHorariaTotal}</h4>
-              <ul className="lista-cursos">
-                {categoriaCurso.cursos.map((curso, cursoIndex) => (
-                  <li key={cursoIndex}>
-                    {curso.nome} (de {curso.periodo}) {curso.cargaHoraria}
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))
-        ) : (
-          <p>Nenhum curso avulso encontrado.</p>
-        )}
-      </section>
+        {/* Seção de Imersões e Cursos Avulsos agrupados */}
+        <section className="secao-conquista">
+          <h3 className="subtitulo-secao"><FiAward /> Imersões & Especializações</h3>
+          <div className="lista-cards">
+            {certificado.imersoes.map((imersao, index) => (
+              <div key={index} className="card-conquista imersao-border">
+                <h4 className="nome-item">{imersao.nome} <span className="carga-horaria">{imersao.cargaHorariaTotal}</span></h4>
+                <p className="tag-status">Concluído</p>
+              </div>
+            ))}
 
-      <div className="info-alura-footer">
-        <p>{informacoesAlura.endereco}</p>
-        <p>{informacoesAlura.telefone}</p>
-        <p>{informacoesAlura.empresa}, CNPJ: {informacoesAlura.cnpj}</p>
-        <p><a href={`https://${informacoesAlura.site}`} target="_blank" rel="noopener noreferrer">{informacoesAlura.site}</a></p>
+            {certificado.cursosAvulsos.map((categoria, index) => (
+              <div key={index} className="card-conquista avulso-border">
+                <h4 className="nome-item">{categoria.nome} <span className="carga-horaria">{categoria.cargaHorariaTotal}</span></h4>
+                <div className="detalhes-lista-compacta">
+                  {categoria.cursos.length} cursos concluídos nesta trilha.
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
       </div>
+
+      <footer className="info-alura-footer">
+        <div className="dados-instituicao">
+          <p><strong>{informacoesAlura.empresa}</strong></p>
+          <p>{informacoesAlura.endereco} | {informacoesAlura.telefone}</p>
+          <p>CNPJ: {informacoesAlura.cnpj}</p>
+          <a href={`https://${informacoesAlura.site}`} target="_blank" rel="noreferrer">{informacoesAlura.site}</a>
+        </div>
+      </footer>
     </motion.div>
   );
 };

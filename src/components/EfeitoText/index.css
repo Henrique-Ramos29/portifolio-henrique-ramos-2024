@@ -1,16 +1,61 @@
-.textoDigitando {
-    font-size: 30px;
-    color: white;
+.efeito-text-container {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
 }
 
-.underline {
-    color: white;
+.nome-titulo {
+    /* Fonte fluida: min 1.8rem, ideal 4vw, max 3.5rem */
+    font-size: clamp(1.8rem, 4vw, 3.5rem);
+    font-weight: 800;
+    color: var(--cor-texto);
+    line-height: 1.2;
+    margin: 0;
 }
 
+.destaque-nome {
+    color: var(--cor-laranja);
+}
 
-@media (min-width: 370px) and (max-width: 460px) {
-    .textoDigitando {
-        font-size: 14px;
+.subtitulo-typing {
+    font-size: clamp(1rem, 2vw, 1.8rem);
+    color: var(--cor-texto-secundario);
+    font-family: 'Fira Code', 'Courier New', monospace; /* Fonte estilo código */
+    min-height: 1.5em; /* Evita que o layout "pule" quando o texto some */
+}
+
+.prefixo {
+    color: var(--cor-laranja);
+    font-weight: bold;
+}
+
+/* Cursor piscante */
+.cursor {
+    color: var(--cor-laranja);
+    font-weight: bold;
+    animation: blink 0.8s infinite;
+    margin-left: 4px;
+}
+
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 968px) {
+    .efeito-text-container {
+        text-align: center;
+        align-items: center;
     }
 }
 
+@media (max-width: 480px) {
+    .nome-titulo {
+        font-size: 1.8rem;
+    }
+    .subtitulo-typing {
+        font-size: 1.1rem;
+    }
+}

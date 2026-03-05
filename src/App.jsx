@@ -1,42 +1,44 @@
-import { BrowserRouter as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
-import './App.css'
-import Formacao from './components/Formacao';
-import Menu from './components/Menu'
-import Projetos from './components/Projetos';
-import Rodape from './components/Rodape';
-import Skills from './components/Skills';
-import Sobre from './components/Sobre';
+
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import './App.css';
+
+// Importe seus componentes de página
 import PaginaPadrao from './components/PaginaPadrao';
-import ScrollToTop from './components/ScrollToTop';
+import Sobre from './components/Sobre';
+import Projetos from './components/Projetos';
 import Contato from './components/Contato';
-import ThemeProvider from './components/Tema/ThemeContext';
-import MeusCursos from './components/MeuCertificado';
+import Skills from './components/Skills';
+import Formacao from './components/Formacao';
 import MeuCertificado from './components/MeuCertificado';
 
-
+// Importe os componentes de layout
+import Menu from './components/Menu';
+import Rodape from './components/Rodape';
+import ScrollToTop from './components/ScrollToTop';
+import ThemeProvider from './components/Tema/ThemeContext';
 
 const App = () => {
-  
   return (
-  <ThemeProvider>
-
-    <BrowserRouter>
-     <ScrollToTop />
-      <Menu />
-      <Routes>
-          <Route path='/' element={<PaginaPadrao />} />
-            <Route path='/sobreMim' element={<Sobre />} />
-            <Route path='/softSkills' element={<Skills/>} />
-            <Route path='/formacao' element={<Formacao />} />
-            <Route path='/projetos' element={<Projetos />} />
-            <Route path='/contato' element={<Contato />} />
-            <Route path='/meu-certificado' element={<MeuCertificado />} />
-      </Routes>
+    <ThemeProvider>
+      <BrowserRouter>
+        <ScrollToTop />
+        <Menu />
+        <Routes>
+          <Route path="/" element={<PaginaPadrao />} />
+          <Route path="/sobre" element={<Sobre />} />
+          <Route path="/projetos" element={<Projetos />} />
+          <Route path="/contato" element={<Contato />} />
+          
+          {/* Rotas adicionais, se necessário */}
+          <Route path='/softSkills' element={<Skills/>} />
+          <Route path='/formacao' element={<Formacao />} />
+          <Route path='/meu-certificado' element={<MeuCertificado />} />
+        </Routes>
         <Rodape />
-    </BrowserRouter>
-
-  </ThemeProvider>
-  )
-}
+      </BrowserRouter>
+    </ThemeProvider>
+  );
+};
 
 export default App;
+

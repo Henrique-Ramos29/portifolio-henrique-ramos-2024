@@ -1,53 +1,186 @@
-.Projetos {
+.projetos-section {
+    padding: 100px 5%;
+    background-color: var(--cor-primaria);
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
     color: var(--cor-laranja);
-    margin: 40px;
-    margin-top: -16px;
-
 }
 
-.containerProjetos {
+/* CONTAINER DESTAQUE */
+.container-destaque {
+    margin-bottom: 5rem;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    gap: 30px;
-
 }
 
-.linkButton:hover {
+.projeto-card.destaque {
+    width: 100%;
+    max-width: 1100px;
+    background: linear-gradient(145deg, var(--cor-secundaria), var(--cor-primaria));
+    border: 2px solid var(--cor-laranja);
+    position: relative;
+    padding: 3rem;
+    border-radius: 20px;
+}
+
+.badge-destaque {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background: var(--cor-laranja);
     color: white;
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    box-shadow: 0 5px 15px rgba(249, 115, 22, 0.4);
 }
 
-.tituloProjetos {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: inherit;
-
+.projeto-content-destaque {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 3rem;
+    align-items: center;
 }
 
-.imagemProjetos {
-    width: 340px;
-    border-radius: 6px;
+.projeto-img-destaque img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
 }
 
-.subtituloProjetos {
-    text-align: center;
-
-}
-
-
-.containerButtonProjetos {
+/* LISTA DE FEATURES */
+.lista-features {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
     display: flex;
-    gap: 15px;
-    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lista-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    color: var(--cor-texto-secundario);
+}
+
+.lista-features li svg {
+    color: var(--cor-laranja);
+    flex-shrink: 0;
+}
+
+/* LINKS E BOTÕES */
+.btn-destaque-demo {
+    background-color: var(--cor-laranja) !important;
+    color: white !important;
+    padding: 12px 25px !important;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.btn-destaque-demo:hover {
+    background-color: var(--cor-laranja-hover) !important;
+    transform: translateY(-2px);
+}
+
+.info-privado {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.85rem;
+    color: var(--cor-texto-secundario);
     margin-top: 10px;
 }
 
-@media (min-width: 370px) and (max-width: 460px) {
-    .imagemProjetos {
-        width: 277px;
+/* GRID DE OUTROS PROJETOS */
+.subtitulo-outros {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--cor-texto-secundario);
+    font-size: 1.5rem;
+}
+
+.projetos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.projeto-card {
+    background: var(--cor-secundaria);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    transition: var(--transicao);
+    display: flex;
+    flex-direction: column;
+}
+
+.projeto-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--cor-laranja);
+}
+
+.projeto-img-wrapper img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.projeto-info {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.projeto-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: auto;
+    padding-top: 1rem;
+}
+
+.projeto-links a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.85rem;
+    padding: 8px 15px;
+    border: 1px solid var(--cor-laranja);
+    border-radius: 5px;
+    color: var(--cor-laranja);
+    transition: 0.3s;
+}
+
+.projeto-links a:hover {
+    background: var(--cor-laranja);
+    color: white;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 968px) {
+    .projeto-content-destaque {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .projeto-card.destaque {
+        padding: 2rem 1.5rem;
     }
 
-    .tituloProjetos {
-        font-size: 27px;
+    .section-title {
+        font-size: 2rem;
     }
 }

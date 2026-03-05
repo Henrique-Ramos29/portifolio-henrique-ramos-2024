@@ -1,179 +1,160 @@
 .meu-certificado-container {
-  font-family: 'Arial', sans-serif;
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 2.5rem;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-  color: #333;
+  max-width: 1100px;
+  margin: 120px auto 50px; /* Espaço para o menu */
+  padding: 3rem;
+  background-color: var(--cor-secundaria);
+  border-radius: 20px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* HEADER DO CERTIFICADO */
+.certificado-header-main {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.icon-main {
+  font-size: 3.5rem;
+  color: var(--cor-laranja);
+  margin-bottom: 1rem;
 }
 
 .certificado-titulo {
-  text-align: center;
-  color: #2c3e50;
-  font-size: 2.8rem;
-  margin-bottom: 2rem;
-  font-weight: 700;
-  border-bottom: 3px solid #e0e0e0;
-  padding-bottom: 1rem;
+  font-size: 2.5rem;
+  color: var(--cor-texto);
 }
 
-.certificado-header {
-  text-align: center;
-  margin-bottom: 3rem;
-  line-height: 1.6;
+.header-status {
+  margin-top: 1.5rem;
 }
 
 .aluno-nome {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  color: #34495e;
+  font-size: 1.3rem;
+  color: var(--cor-texto-secundario);
 }
 
-.periodo-certificacao {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 1.5rem;
+.aluno-nome strong { color: var(--cor-laranja); }
+
+.periodo-certificacao span {
+  background: var(--cor-primaria);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  color: var(--cor-laranja);
+  border: 1px solid var(--border);
 }
 
-.certificado-link-completo {
-  display: inline-block;
+.btn-certificado-online {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 2rem;
+  padding: 12px 25px;
   background-color: var(--cor-laranja);
   color: white;
-  padding: 0.8rem 1.8rem;
   border-radius: 8px;
-  text-decoration: none;
   font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: 0.3s;
 }
 
-.certificado-link-completo:hover {
-  background-color: #0056b3;
-  transform: translateY(-2px);
+.btn-certificado-online:hover {
+  background-color: var(--cor-laranja-hover);
+  transform: translateY(-3px);
 }
 
-.secao-formacoes,
-.secao-imersoes,
-.secao-cursos-avulsos {
-  margin-top: 3.5rem;
-  padding-top: 1.5rem;
-  border-top: 2px dashed #ececec;
+/* GRID DE CONQUISTAS */
+.grid-conquistas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
 }
 
-.secao-formacoes h3,
-.secao-imersoes h3,
-.secao-cursos-avulsos h3 {
-  font-size: 2rem;
-  color: #34495e;
-  margin-bottom: 1.8rem;
-  text-align: center;
-}
-
-.card-formacao,
-.card-imersao,
-.card-curso-avulso {
-  background-color: #fcfcfc;
-  border: 1px solid #e9ecef;
-  border-left: 6px solid var(--cor-laranja); /* Cor de destaque para cards */
-  border-radius: 8px;
-  padding: 1.8rem 2rem;
-  margin-bottom: 2rem;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.card-formacao:hover,
-.card-imersao:hover,
-.card-curso-avulso:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-}
-
-.card-imersao {
-  border-left-color: #ffc107; /* Cor diferente para imersões */
-}
-
-.card-curso-avulso {
-  border-left-color: #17a2b8; /* Cor diferente para cursos avulsos */
-}
-
-
-.nome-formacao,
-.nome-imersao,
-.nome-categoria-curso {
-  font-size: 1.4rem;
-  color: #2c3e50;
-  margin-bottom: 1.2rem;
-  font-weight: 600;
-}
-
-.subsecao {
-  margin-top: 1.5rem;
-  padding-left: 1.2rem;
-  border-left: 2px solid #f0f0f0;
-}
-
-.subsecao h5 {
-  font-size: 1.1rem;
-  color: #555;
-  margin-bottom: 0.8rem;
-}
-
-.lista-cursos,
-.lista-conteudos {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.lista-cursos li,
-.lista-conteudos li {
-  background-color: #f6f9fc;
-  padding: 0.8rem 1rem;
-  margin-bottom: 0.6rem;
-  border-radius: 6px;
-  border: 1px solid #e0e0e0;
-  font-size: 0.95rem;
-  line-height: 1.4;
+.subtitulo-secao {
   display: flex;
   align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: var(--cor-laranja);
 }
 
-.lista-cursos li::before,
-.lista-conteudos li::before {
-  content: '✓'; /* Ícone de check */
-  color: #28a745;
-  font-weight: bold;
-  margin-right: 0.8rem;
+.card-conquista {
+  background: var(--cor-primaria);
+  padding: 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--border);
+  transition: 0.3s;
+}
+
+.card-conquista:hover {
+  border-color: var(--cor-laranja);
+  transform: scale(1.01);
+}
+
+.formacao-border { border-left: 5px solid var(--cor-laranja); }
+.imersao-border { border-left: 5px solid #ffc107; }
+.avulso-border { border-left: 5px solid #17a2b8; }
+
+.nome-item {
   font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
 }
 
-.lista-conteudos li strong {
-  color: #007bff; /* Destaca o tipo de conteúdo */
-  margin-right: 0.4rem;
+.carga-horaria {
+  font-size: 0.8rem;
+  background: var(--cor-secundaria);
+  padding: 2px 8px;
+  border-radius: 4px;
 }
 
+.detalhes-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-curso {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--cor-texto-secundario);
+}
+
+.check-icon {
+  color: #28a745;
+  flex-shrink: 0;
+}
+
+/* FOOTER */
 .info-alura-footer {
-  text-align: center;
   margin-top: 4rem;
   padding-top: 2rem;
-  border-top: 2px solid #e0e0e0;
-  font-size: 0.9rem;
-  color: #777;
-  line-height: 1.8;
+  border-top: 1px solid var(--border);
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--cor-texto-secundario);
 }
 
-.info-alura-footer p {
-  margin: 0.3rem 0;
-}
+.info-alura-footer a { color: var(--cor-laranja); font-weight: bold; }
 
-.info-alura-footer a {
-  color: #007bff;
-  text-decoration: none;
-  font-weight: bold;
-}
+/* RESPONSIVIDADE */
+@media (max-width: 968px) {
+  .grid-conquistas {
+    grid-template-columns: 1fr;
+  }
+  
+  .meu-certificado-container {
+    padding: 1.5rem;
+    width: 95%;
+  }
 
-.info-alura-footer a:hover {
-  text-decoration: underline;
+  .certificado-titulo {
+    font-size: 1.8rem;
+  }
 }
